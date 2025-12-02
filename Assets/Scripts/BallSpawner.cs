@@ -14,7 +14,27 @@ public class BallSpawner : MonoBehaviour
     void SpawnBall()
     {
         Vector3 spawnPos = new Vector3(Random.Range(-spawnXRange, spawnXRange), 5f, 0f);
-        Instantiate(ballPrefab, spawnPos, Quaternion.identity);
+
+        // yangi sharni yaratamiz
+        GameObject newBall = Instantiate(ballPrefab, spawnPos, Quaternion.identity);
+
+        // Sharni Sprite Renderer'ini topamiz
+        SpriteRenderer sr = newBall.GetComponent<SpriteRenderer>();
+
+        // Tasodifiy ranglar ro'yxati
+        Color[] colors = new Color[]
+        {
+            Color.red,
+            Color.blue,
+            Color.green,
+            Color.yellow,
+            Color.magenta,
+            Color.cyan
+        };
+
+        // Random rang beramiz
+        sr.color = colors[Random.Range(0, colors.Length)];
     }
 }
+
 

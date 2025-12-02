@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5431234944892709671}
   - component: {fileID: 5149272714653386822}
   - component: {fileID: 4005287630863559591}
-  - component: {fileID: -9065934527283203828}
   m_Layer: 0
   m_Name: Block (5)
   m_TagString: Untagged
@@ -156,15 +155,3 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &-9065934527283203828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7605306727118281479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eb7ac81fedc06b44a9bcc7fbb83d039, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FreezeWhenTouchAnything
